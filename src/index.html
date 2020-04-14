@@ -14,40 +14,128 @@
 <body>
 
     <header class="titulo"> Blackjack</header>
-    <div class="row mt-2">
-        <div id="divBotones" class="col text-center">
 
-            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
-            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
-            <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
-
+    <!-- <section id="sectionConfig">
+        <divclass="row mt-2">
+            <div id="divConfiguracion" class="col text-right">
+                <button id="btnconfig" class="btn btn-primary">Configuración</button> 
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="row container mt-2">
-        <div class="col">
-
-            <h1>Jugador 1 - <small>0</small> </h1>
-            <div id="jugador-cartas" class="divCartas">
-                <!-- <img class="carta" src="assets/cartas/2C.png" alt=""> -->
+    <section id="sectionBanca">
+        <div class="row container mt-2 col text-center">
+            <div class="col">
+                <img class="imgJugador" src="../src/assets/jugadores/banca.png" alt="banca" width="70px">
+                <h1>Computadora - <small>0</small> </h1>
+                <div id="computadora-cartas" class="divCartas">
+                    <img class="carta" src="assets/cartas/red_back.png" alt="">
+                    <img class="carta" src="assets/cartas/9D.png" alt="">
+                    <img class="carta" src="assets/cartas/10C.png" alt="">
+                </div>
 
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <div class="row container mt-2">
-        <div class="col">
-
-            <h1>Computadora - <small>0</small> </h1>
-            <div id="computadora-cartas" class="divCartas">
-                <!-- <img class="carta" src="assets/cartas/5C.png" alt="">
-                <img class="carta" src="assets/cartas/5C.png" alt=""> -->
-                <!-- <img class="carta" src="assets/cartas/5C.png" alt=""> -->
+    <section id="sectionJugadores">
+        <div class="row container mt-2 col text-center">
+            <div class="col">
+                
+                <img class="imgJugador" src="../src/assets/jugadores/avatarChico1.png" alt="Jugador1" width="70px">
+                <img class="imgFicha" src="../src/assets/fichas/ficha1.png" alt="apuesta1">
+                <img class="imgFicha" src="../src/assets/fichas/ficha1.png" alt="apuesta1">
+                <img class="imgFicha" src="../src/assets/fichas/ficha1.png" alt="apuesta1">
+                <img class="imgFicha" src="../src/assets/fichas/ficha1.png" alt="apuesta1">
+                
+                
+                <h1>Jugador 1 - <small>0</small> </h1>                
+                <div id="jugador-cartas1" class="divCartas">
+                    <img class="carta" src="assets/cartas/JS.png"" alt="">
+                </div>
+                <h1>Dinero - <small>0</small> </h1>
+                
             </div>
+            <div class="col">
 
+                <img class="imgJugador" src="../src/assets/jugadores/avatarChica1.png" alt="Jugado2" width="70px">
+                <img class="imgFicha" src="../src/assets/fichas/ficha5.png" alt="apuesta2" width="50px">
+                <h1>Jugador 2 - <small>0</small> </h1>
+                <div id="jugador-cartas2" class="divCartas">
+                    <img class="carta" src="assets/cartas/QD.png" alt="">
+                </div>
+                <h1>Dinero - <small>0</small> </h1>
+
+            </div>
+            <div class="col">
+
+                <img class="imgJugador" src="../src/assets/jugadores/avatarChico2.png" alt="Jugador3" width="70px">
+                <img class="imgFicha" src="../src/assets/fichas/ficha10.png" alt="apuesta3" width="50px">
+                <h1>Jugador 3 - <small>0</small> </h1>
+                <div id="jugador-cartas3" class="divCartas">
+                    <img class="carta" src="assets/cartas/KH.png" alt="">
+                </div>
+                <h1>Dinero - <small>0</small> </h1>
+            </div>
+            <div class="col">
+
+                <img class="imgJugador" src="../src/assets/jugadores/avatarChica2.png" alt="Jugador4" width="70px">
+                <img class="imgFicha" src="../src/assets/fichas/ficha50.png" alt="apuesta4" width="50px">
+                <h1>Jugador 4 - <small>0</small> </h1>
+                <div id="jugador-cartas4" class="divCartas">
+                    <img class="carta" src="assets/cartas/AC.png" alt="">                
+                </div>
+                <h1>Dinero - <small>0</small> </h1>
+
+            </div>
         </div>
+    </section>
+
+    <section id="fichasApuesta">
+        <div class="row container mt-2 col text-center">
+            <div class="col">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha1.png" alt="1€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha5.png" alt="5€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha10.png" alt="10€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha20.png" alt="20€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha50.png" alt="50€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha100.png" alt="100€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha500.png" alt="500€">
+                <img  class="fichasApuesta" src="../src/assets/fichas/ficha1000.png" alt="1000€">       
+            </div>
+        </div>
+    </section>
+    <section id="sectionBotones">
+        <div class="row mt-2">
+            <div id="divBotones" class="col text-center">
+
+                <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+                <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+                <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+
+            </div>
+        </div>
+    </section> -->
+    
+<section class="elegirNuevaRecuperar">
+    <div>
+        <center>
+            <br><br><br>
+            <button id="nuevaPartida" class="btn btn-primary">Nueva Partida</button>
+            <br><br>
+            <button id="recuperarDatos" class="btn btn-primary">Continuar partida</button>
+        </center>
     </div>
+</section>
+
+<section class="configInicial">
+
+    
+
+</section>
+
+
+
    
 </body>
 
